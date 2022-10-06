@@ -1,34 +1,31 @@
 class Solver
-    
-    def factorial(n)
-        if n == 0
-            return 1
-        elsif n < 0
-            return "Error: Factorial of negative number"
-        else
-            return n * factorial(n-1)
-        end 
+  def factorial(num)
+    if num.zero?
+      1
+    elsif num.negative?
+      'Error: Factorial of negative number'
+    else
+      num * factorial(num - 1)
     end
-   
-    def reverse(string)
-      if string == ""
-        return ""
-      else
-       return string.reverse
-      end 
+  end
+
+  def reverse(string)
+    if string == ''
+      ''
+    else
+      string.reverse
     end
-    
-    def fizzbuzz(num)
-            if num % 3 == 0 && num % 5 == 0
-               return 'fizzbuzz'
-             elsif 
-               num % 3 == 0 
-                return 'fizz'
-             elsif 
-                num % 5 == 0 
-               return 'buzz'
-             else return num.to_s    
-          end
-       
-    end  
+  end
+
+  def fizzbuzz(num)
+    if (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 3).zero?
+      'fizz'
+    elsif (num % 5).zero?
+      'buzz'
+    else
+      num.to_s
+    end
+  end
 end
