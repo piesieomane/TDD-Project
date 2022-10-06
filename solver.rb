@@ -10,7 +10,13 @@ class Solver
         end 
     end
    
-   
+    def reverse(string)
+      if string == ""
+        return ""
+      else
+       return string.reverse
+      end 
+    end
 
-
+    
 end
