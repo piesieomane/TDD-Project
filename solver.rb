@@ -19,17 +19,16 @@ class Solver
     end
     
     def fizzbuzz(num)
-        for(let i = 0; i < num; i++)
-            if num % 3 && num % 5 == 0
-                puts 'Fizzbuzz'
+            if num % 3 == 0 && num % 5 == 0
+               return 'fizzbuzz'
              elsif 
                num % 3 == 0 
-                 puts 'Fizz'
+                return 'fizz'
              elsif 
                 num % 5 == 0 
-                puts 'Buzz'
-             else puts num.to_s    
+               return 'buzz'
+             else return num.to_s    
           end
-        end
+       
     end  
 end
