@@ -3,7 +3,7 @@ class Solver
     if num.zero?
       1
     elsif num.negative?
-      'Error: Factorial of negative number'
+      raise ArgumentError, 'Negative numbers are not allowed'
     else
       num * factorial(num - 1)
     end

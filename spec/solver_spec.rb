@@ -21,6 +21,9 @@ describe Solver do
     it 'returns 120 when given 5' do
       expect(solver.factorial(5)).to eq(120)
     end
+    it 'returns an error when given a negative number' do
+      expect { solver.factorial(-1) }.to raise_error(ArgumentError)
+    end
   end
 
   describe '#reverse' do
