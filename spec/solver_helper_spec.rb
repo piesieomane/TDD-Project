@@ -21,4 +21,17 @@ describe Solver do
             expect(Solver.factorial(5)).to eq(120)
         end
     end
+
+    describe "#reverse" do
+        it "returns 'olleh' when given 'hello'" do
+            expect(Solver.reverse("hello")).to eq("olleh")
+        end
+        it "returns 'dlrow' when given 'world'" do
+            expect(Solver.reverse("world")).to eq("dlrow")
+        end
+        it "returns 'dlrow olleh' when given 'hello world'" do
+            expect(Solver.reverse("hello world")).to eq("dlrow olleh")
+        end
+    end
+        
 end
