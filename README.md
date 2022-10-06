@@ -14,10 +14,10 @@ A TDD project in this project we will implement a class with some methods, but w
 
 ## Getting Started
 
-- Clone this repo <https://github.com/NickEmma/TDD-Project>
+- Clone this repo <https://github.com/piesieomane/TDD-Project>
 
   ```bash
-  git clone https://github.com/NickEmma/TDD-Project
+  git clone https://github.com/piesieomane/TDD-Project
   ```
 
 - Navigate to morse-code folder/directory
